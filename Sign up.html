@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Library Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h1>Welcome to Plp Academy Library</h1>
+            <p>Please log in to access our resources.</p>
+        </div>
+        <form class="login-form" id="loginForm">
+            <div class="input-group">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
+            </div>
+            <div class="options-group">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember me</label>
+                <a href="forgot password.html" class="forgot-password">Forgot password?</a>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+            <div class="signup-link">
+                <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+            </div>
+            <div class="social-login">
+                <p>Or login with:</p>
+                <button type="button" class="social-button google">Login with Google</button>
+                <button type="button" class="social-button facebook">Login with Facebook</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
